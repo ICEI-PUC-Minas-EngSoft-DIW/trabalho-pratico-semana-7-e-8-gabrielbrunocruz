@@ -4,40 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiteSemana7e8DIW</title>
+    <title>brumatrip</title>
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!--Cabecalho-->
     <header class="header bg-primary p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="text-light">Brumadinho</h1>
-            <nav class="caixa-menuprincipal d-flex align-items-center gap-3">
-                <ul class="menu list-unstyled d-flex gap-3 mb-0">
-                    <li><a href="#" class="text-light">Home</a></li>
-                    <li><a href="#" class="text-light">Sobre</a></li>
-                    <li><a href="#" class="text-light">Contato</a></li>
+        <div class="container d-flex justify-content-around align-items-center">
+            <a href="index.html"><img id="logo-site" src="img/logosite.png" alt=""></a>
+            <nav class="caixa-menuprincipal d-flex align-items-center gap-3 me-5">
+                <ul class="menu list-unstyled d-flex gap-5 mb-0 me-5">
+                    <li><a href="index.html" class="text-light">Home</a></li>
+                    <li><a href="sobre.html" class="text-light">Sobre</a></li>
+                    <li><a href="#contato" class="text-light">Contato</a></li>
                 </ul>
                 <div class="caixa-pesquisa d-flex">
                     <input type="text" class="texto-pesquisa" placeholder="Pesquisar">
                     <button class="btn btn-light ms-2">Ok</button>
                 </div>
-                <div class="login-cadastro ms-3">
-                    <button class="btn btn-light">Login</button>
-                    <button class="btn btn-success">Cadastre-se</button>
-                </div>
             </nav>
         </div>
     </header>
 
-    <!--imagem de destaque-->
-    <section>
-        <img class="destaque w-100" src="https://picsum.photos/1200/400" alt="">
-    </section>
+    <!--Carrossel-->
+    <div id="carouselExampleCaptions" class="carousel slide meu-carrossel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <a href="detalhes.html?id=1">
+                <div class="carousel-item active">
+                    <img src="img/inhotim-capa2019-01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Inhotim</h5>
+                        <p>Um dos maiores museus de arte contemporânea a céu aberto do mundo.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detalhes.html?id=2">
+                <div class="carousel-item">
+                    <img src="img/cachoeiradasostrascapa.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cachoeira das Ostras</h5>
+                        <p>Uma bela cachoeira localizada em meio à natureza exuberante.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detalhes.html?id=3">
+                <div class="carousel-item">
+                    <img src="img/memorialbrumadinhocapa.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Memorial Brumadinho</h5>
+                        <p>Um memorial dedicado às vítimas do desastre de Brumadinho.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detalhes.html?id=4">
+                <div class="carousel-item">
+                    <img src="img/piedadedoparaopebacapa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Piedade do Paraopeba</h5>
+                        <p>Igrejinha histórica com arquitetura colonial preservada.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detalhes.html?id=5">
+                <div class="carousel-item">
+                    <img src="img/ruinasdofortecapa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ruinas do Forte</h5>
+                        <p>Ruínas históricas que contam a história da região.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="detalhes.html?id=6">
+                <div class="carousel-item">
+                    <img src="img/fazendadosmartinscapa.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fazenda dos Martins</h5>
+                        <p>Uma fazenda tradicional que oferece experiências rurais autênticas.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <!--Conteudo principal-->
     <main class="conteudo container my-5">
@@ -53,53 +129,96 @@
 
         <section class="pontos-turisticos mb-5">
             <h2>Pontos Turisticos</h2>
-            <div class="row">
-                <article class="card col-md-4 p-3">
-                    <h3>Ponto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
-                <article class="card col-md-4 p-3">
-                    <h3>Ponto 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
-                <article class="card col-md-4 p-3">
-                    <h3>Ponto 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/inhotim_capa.jpg.webp" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Inhotim</h5>
+                            <p class="card-text">Um dos maiores museus de arte contemporânea a céu aberto do mundo.</p>
+                            <a href="detalhes.html?id=1" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: inhotim.org.br </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/Cachoeira-da-Ostra.jpg" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Cachoeira da Ostra</h5>
+                            <p class="card-text">Uma bela cachoeira localizada em meio à natureza exuberante.</p>
+                            <a href="detalhes.html?id=2" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: guiadostrilheiros.com.br</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/memorial.jpg" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Memorial Brumadinho</h5>
+                            <p class="card-text">Um memorial dedicado às vítimas do desastre de Brumadinho.</p>
+                            <a href="detalhes.html?id=3" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: memorialbrumadinho.org.br </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/piedadedoparaopeba.jpg" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Piedade do Paraopeba</h5>
+                            <p class="card-text">Igrejinha histórica com arquitetura colonial preservada.</p>
+                            <a href="detalhes.html?id=4" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: wikipedia.org </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/ruinasdoforte.jpg" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Ruinas do Forte</h5>
+                            <p class="card-text">Ruínas históricas que contam a história da região.</p>
+                            <a href="detalhes.html?id=5" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: minasgerais.com.br </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/fazendadosmartins.jpg" class="card-img-top" alt=" ">
+                        <div class="card-body">
+                            <h5 class="card-title">Fazenda dos Martins</h5>
+                            <p class="card-text">Uma fazenda tradicional que oferece experiências rurais autênticas.</p>
+                            <a href="detalhes.html?id=6" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">fonte img: wikipedia.org </small>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
 
-        <!--Eventos-->
-        <section class="eventos">
-            <h2>Dicas e próximos eventos</h2>
-            <div class="row">
-                <article class="card col-md-4 p-3">
-                    <h3>Evento 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
-                <article class="card col-md-4 p-3">
-                    <h3>Evento 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
-                <article class="card col-md-4 p-3">
-                    <h3>Evento 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                    <img src="https://picsum.photos/120/120" class="img-fluid" alt="">
-                </article>
-            </div>
-        </section>
     </main>
 
     <!--Rodape-->
-    <footer class="bg-primary text-light text-center p-3 mt-5">
-        <p>Copyright © 2025 Gabriel Bruno Cruz | Contato: email@exemplo.com</p>
+    <footer id="contato" class="bg-primary text-light text-center p-3 mt-5">
+        <p>Copyright © 2025 Gabriel Bruno Cruz | Engenharia de Software | 1 Semestre | Contato: brumatrip@gmail.com</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
